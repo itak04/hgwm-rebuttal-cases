@@ -1,0 +1,47 @@
+{
+  "schema": "anonymous-selected-cases-qa-v1",
+  "all_checks_passed": true,
+  "checks": {
+    "public_case_ids_exactly_three": true,
+    "six_full_wmnav_runs": true,
+    "two_hundred_one_original_poses": true,
+    "all_selected_pairs_both_successful": true,
+    "full_spl_higher_in_each_selected_pair": true,
+    "metric_values_equal_verified_evaluator_records": true,
+    "distance_stop_sequence_verified_for_chair_case": true,
+    "only_primary_three_case_figure_used": true,
+    "figure_encoded_pixels_equal_recorded_source": true,
+    "inline_json_equals_cases_json": true,
+    "english_default_chinese_switch": true,
+    "download_handler_payload_matches": true,
+    "javascript_syntax": true,
+    "unique_html_ids": true,
+    "no_external_dependencies": true,
+    "anonymous_public_content_scan": true,
+    "anonymous_png_metadata_scan": true,
+    "no_other_case_details": true,
+    "no_aggregate_performance_estimates_displayed": true,
+    "selection_note_visible_in_both_languages": true,
+    "no_publication_status_claim": true
+  },
+  "validation_scope": "HTML parsing; exact data and encoded-pixel checks; original-pose counts; metric checks; JavaScript syntax; language-switch and download-handler execution in a mock DOM; anonymous-content scan.",
+  "browser_render_performed": false,
+  "browser_download_click_performed": false,
+  "public_files": [
+    {
+      "file": "index.html",
+      "bytes": 385505,
+      "sha256": "0b972188d633c53d931fa3eeafe96e1f3dfd8b64c2fd219d235abe7033f271bc"
+    },
+    {
+      "file": "cases.json",
+      "bytes": 117572,
+      "sha256": "fda81e7a820e21990e421f881c0e96a3b6060f68f6ef369ef002577f8db0db04"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1303,
+      "sha256": "74984f5d4dc54d4c8be224b5e626b41252171959c450fedab1f11bda16e13105"
+    }
+  ]
+}

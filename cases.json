@@ -1,0 +1,3787 @@
+{
+  "schema": "anonymous-hgwm-selected-cases-v1",
+  "selection_note": {
+    "en": "These are post-hoc selected qualitative cases in which both methods succeed and Full has higher SPL. They are not aggregate performance estimates; the full quantitative evaluation remains in the manuscript.",
+    "zh": "这些是事后选择的定性案例，两种方法均成功且Full的SPL更高。它们不代表总体性能估计；完整定量评测仍保留在论文正文中。"
+  },
+  "scope": {
+    "selected_case_ids": [
+      345,
+      761,
+      696
+    ],
+    "paired_navigation_runs": 6,
+    "full_and_wmnav_pose_samples": 201,
+    "new_navigation_runs_performed_for_this_page": 0
+  },
+  "protocol": {
+    "dataset": "HM3D v0.2",
+    "split": "validation",
+    "seed": 48,
+    "maximum_high_level_decision_cycles": 40,
+    "recorded_model_label": "gemini-3-flash-preview",
+    "success_criterion": "Explicit STOP with evaluator success.",
+    "spl_representation": "fraction from 0 to 1"
+  },
+  "trajectory_semantics": {
+    "positions": "Original saved high-level poses; duplicate positions retained in JSON.",
+    "figure_connections": "Dashed links connect recorded endpoints; they do not reconstruct primitive motion.",
+    "distance_samples": "One recorded evaluator distance at pose_at_metric per decision cycle; not assumed to be after the action.",
+    "path_length_source": "Archived evaluator result, not the length of the displayed polyline.",
+    "interpolated_positions": 0,
+    "synthetic_environment_geometry": false,
+    "cost_note": "Navigation path length and decision cycles are not inference-call or latency measurements."
+  },
+  "cases": [
+    {
+      "case_id": 345,
+      "goal": "tv_monitor",
+      "runs": [
+        {
+          "method": "Full",
+          "strict_stop_success": true,
+          "spl_fraction": 0.45007124491110284,
+          "path_length_m": 21.09346044063568,
+          "decision_cycles": 14,
+          "final_distance_to_goal_m": 0.2188713550567627,
+          "first_recorded_below_1m_cycle_one_based": 10,
+          "explicit_stop_cycle_one_based": 14,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                -5.003389835357666,
+                0.030859999358654022,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9447699785232544,
+                0.0,
+                -0.3277199864387512
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.003389835357666,
+                0.030859999358654022,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9447699785232544,
+                0.0,
+                -0.3277199864387512
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.003389835357666,
+                0.1808570772409439,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8309792876243591,
+                0.0,
+                -0.5563033819198608
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7735766172409058,
+                0.0,
+                -0.63370281457901
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7735766172409058,
+                0.0,
+                -0.63370281457901
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9140145182609558,
+                0.0,
+                -0.4056815207004547
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8953666687011719,
+                0.0,
+                -0.4453296959400177
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8953666687011719,
+                0.0,
+                -0.4453296959400177
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7533977031707764,
+                0.0,
+                -0.6575651168823242
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -1.0405372381210327,
+                0.1808570772409439,
+                -1.2422443628311157
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7476062178611755,
+                0.0,
+                -0.6641423106193542
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                -1.0405372381210327,
+                0.1808570772409439,
+                -1.2422443628311157
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7476062178611755,
+                0.0,
+                -0.6641423106193542
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -1.0405372381210327,
+                0.1808570772409439,
+                -1.2422443628311157
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.555039644241333,
+                0.0,
+                -0.8318238854408264
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                0.6448819041252136,
+                0.1808570772409439,
+                -1.380077600479126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6592831611633301,
+                0.0,
+                -0.7518947720527649
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                0.6448819041252136,
+                0.1808570772409439,
+                -1.380077600479126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6592831611633301,
+                0.0,
+                -0.7518947720527649
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                0.6448819041252136,
+                0.1808570772409439,
+                -1.380077600479126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8929378986358643,
+                0.0,
+                0.4501798748970032
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -0.8050965666770935,
+                0.1808570772409439,
+                -0.49263036251068115
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8723610639572144,
+                0.0,
+                0.4888620972633362
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_before",
+              "cycle_one_based": 6,
+              "stage": "pose_before",
+              "position_world_m": [
+                -0.8050965666770935,
+                0.1808570772409439,
+                -0.49263036251068115
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8723610639572144,
+                0.0,
+                0.4888620972633362
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_at_metric",
+              "cycle_one_based": 6,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -0.8050965666770935,
+                0.1808570772409439,
+                -0.49263036251068115
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7113416194915771,
+                0.0,
+                0.7028464078903198
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_after_action",
+              "cycle_one_based": 6,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -2.469564437866211,
+                0.1808570772409439,
+                -0.1468760371208191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7756883502006531,
+                0.0,
+                0.6311160922050476
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_before",
+              "cycle_one_based": 7,
+              "stage": "pose_before",
+              "position_world_m": [
+                -2.469564437866211,
+                0.1808570772409439,
+                -0.1468760371208191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7756883502006531,
+                0.0,
+                0.6311160922050476
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_at_metric",
+              "cycle_one_based": 7,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -2.469564437866211,
+                0.1808570772409439,
+                -0.1468760371208191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5803830623626709,
+                0.0,
+                0.8143435716629028
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_after_action",
+              "cycle_one_based": 7,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -4.14333438873291,
+                0.1808570772409439,
+                0.15060073137283325
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7664810419082642,
+                0.0,
+                0.6422669291496277
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_before",
+              "cycle_one_based": 8,
+              "stage": "pose_before",
+              "position_world_m": [
+                -4.14333438873291,
+                0.1808570772409439,
+                0.15060073137283325
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7664810419082642,
+                0.0,
+                0.6422669291496277
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_at_metric",
+              "cycle_one_based": 8,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -4.14333438873291,
+                0.1808570772409439,
+                0.15060073137283325
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5685465335845947,
+                0.0,
+                0.8226511478424072
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_after_action",
+              "cycle_one_based": 8,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -5.835109710693359,
+                0.1808570772409439,
+                -0.016429303213953972
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6714711785316467,
+                0.0,
+                0.7410306930541992
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_before",
+              "cycle_one_based": 9,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.835109710693359,
+                0.1808570772409439,
+                -0.016429303213953972
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6714711785316467,
+                0.0,
+                0.7410306930541992
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_at_metric",
+              "cycle_one_based": 9,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.835109710693359,
+                0.1808570772409439,
+                -0.016429303213953972
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.45073288679122925,
+                0.0,
+                0.8926588892936707
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_after_action",
+              "cycle_one_based": 9,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -7.457867622375488,
+                0.1808570772409439,
+                -0.5230447053909302
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5924487113952637,
+                0.0,
+                0.8056081533432007
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_before",
+              "cycle_one_based": 10,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.457867622375488,
+                0.1808570772409439,
+                -0.5230447053909302
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5924487113952637,
+                0.0,
+                0.8056081533432007
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_at_metric",
+              "cycle_one_based": 10,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.457867622375488,
+                0.1808570772409439,
+                -0.5230447053909302
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.77715665102005,
+                0.0,
+                0.629307210445404
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_after_action",
+              "cycle_one_based": 10,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -9.063996315002441,
+                0.1808570772409439,
+                -1.0801395177841187
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5797832012176514,
+                0.0,
+                0.8147708177566528
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_before",
+              "cycle_one_based": 11,
+              "stage": "pose_before",
+              "position_world_m": [
+                -9.063996315002441,
+                0.1808570772409439,
+                -1.0801395177841187
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5797832012176514,
+                0.0,
+                0.8147708177566528
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_at_metric",
+              "cycle_one_based": 11,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -9.063996315002441,
+                0.1808570772409439,
+                -1.0801395177841187
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7672244310379028,
+                0.0,
+                0.6413787007331848
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_after_action",
+              "cycle_one_based": 11,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7383930087089539,
+                0.0,
+                0.6743706464767456
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_before",
+              "cycle_one_based": 12,
+              "stage": "pose_before",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7383930087089539,
+                0.0,
+                0.6743706464767456
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_at_metric",
+              "cycle_one_based": 12,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8851071000099182,
+                0.0,
+                0.46538737416267395
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_after_action",
+              "cycle_one_based": 12,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.46538737416267395,
+                0.0,
+                -0.8851071000099182
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_before",
+              "cycle_one_based": 13,
+              "stage": "pose_before",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.46538737416267395,
+                0.0,
+                -0.8851071000099182
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_at_metric",
+              "cycle_one_based": 13,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -10.757025718688965,
+                0.1808570772409439,
+                -0.9263774156570435
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.22606131434440613,
+                -0.0,
+                0.9741130471229553
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_after_action",
+              "cycle_one_based": 13,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -7.966624736785889,
+                0.1808570772409439,
+                -2.3926875591278076
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5246351361274719,
+                0.0,
+                -0.8513271808624268
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_before",
+              "cycle_one_based": 14,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.966624736785889,
+                0.1808570772409439,
+                -2.3926875591278076
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5246351361274719,
+                0.0,
+                -0.8513271808624268
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_at_metric",
+              "cycle_one_based": 14,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.966624736785889,
+                0.1808570772409439,
+                -2.3926875591278076
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7317545413970947,
+                0.0,
+                -0.6815682649612427
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_after_action",
+              "cycle_one_based": 14,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -7.966624736785889,
+                0.1808570772409439,
+                -2.3926875591278076
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7317545413970947,
+                0.0,
+                -0.6815682649612427
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 9.147880554199219,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 7.506619453430176,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 6.0418877601623535,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 6.535085678100586,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 8.15335750579834,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 6,
+              "distance_to_goal_m": 6.5723772048950195,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 7,
+              "distance_to_goal_m": 4.920577049255371,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 8,
+              "distance_to_goal_m": 3.3283190727233887,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 9,
+              "distance_to_goal_m": 1.7498596906661987,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 10,
+              "distance_to_goal_m": 0.6083093285560608,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 11,
+              "distance_to_goal_m": 0.8355906009674072,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 12,
+              "distance_to_goal_m": 2.425220251083374,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 13,
+              "distance_to_goal_m": 2.425220251083374,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 14,
+              "distance_to_goal_m": 0.2188713550567627,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        },
+        {
+          "method": "WMNav",
+          "strict_stop_success": true,
+          "spl_fraction": 0.32450391776282955,
+          "path_length_m": 29.255609810352325,
+          "decision_cycles": 20,
+          "final_distance_to_goal_m": 0.4064862132072449,
+          "first_recorded_below_1m_cycle_one_based": 11,
+          "explicit_stop_cycle_one_based": 20,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                -5.003389835357666,
+                0.030859999358654022,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9447699785232544,
+                0.0,
+                -0.3277199864387512
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.003389835357666,
+                0.030859999358654022,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9447699785232544,
+                0.0,
+                -0.3277199864387512
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.003389835357666,
+                0.1808570772409439,
+                -2.7904300689697266
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8309792876243591,
+                0.0,
+                -0.5563033819198608
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7735766172409058,
+                0.0,
+                -0.63370281457901
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7735766172409058,
+                0.0,
+                -0.63370281457901
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -3.3366494178771973,
+                0.1808570772409439,
+                -2.4558000564575195
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9140145182609558,
+                0.0,
+                -0.4056815207004547
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8953666687011719,
+                0.0,
+                -0.4453296959400177
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8953666687011719,
+                0.0,
+                -0.4453296959400177
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.3226879835128784,
+                0.0,
+                -0.9465053677558899
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.9465053677558899,
+                -0.0,
+                -0.3226879835128784
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.9465053677558899,
+                -0.0,
+                -0.3226879835128784
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -1.9788131713867188,
+                0.1808570772409439,
+                -1.4515122175216675
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5597073435783386,
+                0.0,
+                -0.8286903500556946
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -1.041532039642334,
+                0.1808570772409439,
+                -1.2384706735610962
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7500764727592468,
+                0.0,
+                -0.6613511443138123
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                -1.041532039642334,
+                0.1808570772409439,
+                -1.2384706735610962
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7500764727592468,
+                0.0,
+                -0.6613511443138123
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -1.041532039642334,
+                0.1808570772409439,
+                -1.2384706735610962
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5581361651420593,
+                0.0,
+                -0.829749345779419
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                0.6520803570747375,
+                0.1808570772409439,
+                -1.0845530033111572
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.737091064453125,
+                0.0,
+                -0.675793468952179
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_before",
+              "cycle_one_based": 6,
+              "stage": "pose_before",
+              "position_world_m": [
+                0.6520803570747375,
+                0.1808570772409439,
+                -1.0845530033111572
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.737091064453125,
+                0.0,
+                -0.675793468952179
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_at_metric",
+              "cycle_one_based": 6,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                0.6520803570747375,
+                0.1808570772409439,
+                -1.0845530033111572
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.838725745677948,
+                0.0,
+                0.5445540547370911
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_after_action",
+              "cycle_one_based": 6,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -0.905800461769104,
+                0.1808570772409439,
+                -0.551055908203125
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8339213132858276,
+                0.0,
+                0.551883339881897
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_before",
+              "cycle_one_based": 7,
+              "stage": "pose_before",
+              "position_world_m": [
+                -0.905800461769104,
+                0.1808570772409439,
+                -0.551055908203125
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8339213132858276,
+                0.0,
+                0.551883339881897
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_at_metric",
+              "cycle_one_based": 7,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -0.905800461769104,
+                0.1808570772409439,
+                -0.551055908203125
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6575552225112915,
+                0.0,
+                0.7534063458442688
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_after_action",
+              "cycle_one_based": 7,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -2.545353412628174,
+                0.1808570772409439,
+                -0.10176119208335876
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7950757741928101,
+                0.0,
+                0.6065101027488708
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_before",
+              "cycle_one_based": 8,
+              "stage": "pose_before",
+              "position_world_m": [
+                -2.545353412628174,
+                0.1808570772409439,
+                -0.10176119208335876
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7950757741928101,
+                0.0,
+                0.6065101027488708
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_at_metric",
+              "cycle_one_based": 8,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -2.545353412628174,
+                0.1808570772409439,
+                -0.10176119208335876
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6056053638458252,
+                0.0,
+                0.7957651615142822
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_after_action",
+              "cycle_one_based": 8,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -4.22129487991333,
+                0.1808570772409439,
+                0.18323062360286713
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7640818953514099,
+                0.0,
+                0.6451192498207092
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_before",
+              "cycle_one_based": 9,
+              "stage": "pose_before",
+              "position_world_m": [
+                -4.22129487991333,
+                0.1808570772409439,
+                0.18323062360286713
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7640818953514099,
+                0.0,
+                0.6451192498207092
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_at_metric",
+              "cycle_one_based": 9,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -4.22129487991333,
+                0.1808570772409439,
+                0.18323062360286713
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5654764771461487,
+                0.0,
+                0.8247644305229187
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_after_action",
+              "cycle_one_based": 9,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -5.854552745819092,
+                0.1808570772409439,
+                -0.28843358159065247
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6010617613792419,
+                0.0,
+                0.799202561378479
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_before",
+              "cycle_one_based": 10,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.854552745819092,
+                0.1808570772409439,
+                -0.28843358159065247
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6010617613792419,
+                0.0,
+                0.799202561378479
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_at_metric",
+              "cycle_one_based": 10,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.854552745819092,
+                0.1808570772409439,
+                -0.28843358159065247
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7838667035102844,
+                0.0,
+                0.6209291815757751
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_after_action",
+              "cycle_one_based": 10,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -7.5048956871032715,
+                0.1808570772409439,
+                -0.6963155269622803
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6164695620536804,
+                0.0,
+                0.78737872838974
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_before",
+              "cycle_one_based": 11,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.5048956871032715,
+                0.1808570772409439,
+                -0.6963155269622803
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6164695620536804,
+                0.0,
+                0.78737872838974
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_at_metric",
+              "cycle_one_based": 11,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.5048956871032715,
+                0.1808570772409439,
+                -0.6963155269622803
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7957777976989746,
+                0.0,
+                0.6055887341499329
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_after_action",
+              "cycle_one_based": 11,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6040860414505005,
+                0.0,
+                0.7969191074371338
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_before",
+              "cycle_one_based": 12,
+              "stage": "pose_before",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6040860414505005,
+                0.0,
+                0.7969191074371338
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_at_metric",
+              "cycle_one_based": 12,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7862140536308289,
+                0.0,
+                0.6179542541503906
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_after_action",
+              "cycle_one_based": 12,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6179542541503906,
+                0.0,
+                -0.7862140536308289
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_before",
+              "cycle_one_based": 13,
+              "stage": "pose_before",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6179542541503906,
+                0.0,
+                -0.7862140536308289
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_at_metric",
+              "cycle_one_based": 13,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -9.141678810119629,
+                0.1808570772409439,
+                -1.1555875539779663
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9158245921134949,
+                0.0,
+                0.40157851576805115
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_after_action",
+              "cycle_one_based": 13,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -10.833878517150879,
+                0.1808570772409439,
+                -0.9929622411727905
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7401561141014099,
+                0.0,
+                0.6724351048469543
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_before",
+              "cycle_one_based": 14,
+              "stage": "pose_before",
+              "position_world_m": [
+                -10.833878517150879,
+                0.1808570772409439,
+                -0.9929622411727905
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7401561141014099,
+                0.0,
+                0.6724351048469543
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_at_metric",
+              "cycle_one_based": 14,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -10.833878517150879,
+                0.1808570772409439,
+                -0.9929622411727905
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8863224983215332,
+                0.0,
+                0.4630684554576874
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_after_action",
+              "cycle_one_based": 14,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -12.466840744018555,
+                0.1808570772409439,
+                -0.7509154081344604
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.741428792476654,
+                0.0,
+                0.6710315346717834
+              ]
+            },
+            {
+              "sample_id": "step_0014.pose_before",
+              "cycle_one_based": 15,
+              "stage": "pose_before",
+              "position_world_m": [
+                -12.466840744018555,
+                0.1808570772409439,
+                -0.7509154081344604
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.741428792476654,
+                0.0,
+                0.6710315346717834
+              ]
+            },
+            {
+              "sample_id": "step_0014.pose_at_metric",
+              "cycle_one_based": 15,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -12.466840744018555,
+                0.1808570772409439,
+                -0.7509154081344604
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9989838004112244,
+                0.0,
+                -0.045071229338645935
+              ]
+            },
+            {
+              "sample_id": "step_0014.pose_after_action",
+              "cycle_one_based": 15,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -11.661834716796875,
+                0.1808570772409439,
+                0.7464022040367126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9697358012199402,
+                0.0,
+                -0.24415656924247742
+              ]
+            },
+            {
+              "sample_id": "step_0015.pose_before",
+              "cycle_one_based": 16,
+              "stage": "pose_before",
+              "position_world_m": [
+                -11.661834716796875,
+                0.1808570772409439,
+                0.7464022040367126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9697358012199402,
+                0.0,
+                -0.24415656924247742
+              ]
+            },
+            {
+              "sample_id": "step_0015.pose_at_metric",
+              "cycle_one_based": 16,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -11.661834716796875,
+                0.1808570772409439,
+                0.7464022040367126
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9997589588165283,
+                0.0,
+                0.02195453830063343
+              ]
+            },
+            {
+              "sample_id": "step_0015.pose_after_action",
+              "cycle_one_based": 16,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9839139580726624,
+                0.0,
+                -0.17864294350147247
+              ]
+            },
+            {
+              "sample_id": "step_0016.pose_before",
+              "cycle_one_based": 17,
+              "stage": "pose_before",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9839139580726624,
+                0.0,
+                -0.17864294350147247
+              ]
+            },
+            {
+              "sample_id": "step_0016.pose_at_metric",
+              "cycle_one_based": 17,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5732800960540771,
+                0.0,
+                -0.8193594813346863
+              ]
+            },
+            {
+              "sample_id": "step_0016.pose_after_action",
+              "cycle_one_based": 17,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.8193594813346863,
+                -0.0,
+                -0.5732800960540771
+              ]
+            },
+            {
+              "sample_id": "step_0017.pose_before",
+              "cycle_one_based": 18,
+              "stage": "pose_before",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.8193594813346863,
+                -0.0,
+                -0.5732800960540771
+              ]
+            },
+            {
+              "sample_id": "step_0017.pose_at_metric",
+              "cycle_one_based": 18,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -11.065788269042969,
+                0.1808570772409439,
+                2.3337247371673584
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9855539202690125,
+                0.0,
+                -0.16936197876930237
+              ]
+            },
+            {
+              "sample_id": "step_0017.pose_after_action",
+              "cycle_one_based": 18,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -11.016624450683594,
+                0.1808570772409439,
+                4.032196998596191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9997752904891968,
+                0.0,
+                -0.021199069917201996
+              ]
+            },
+            {
+              "sample_id": "step_0018.pose_before",
+              "cycle_one_based": 19,
+              "stage": "pose_before",
+              "position_world_m": [
+                -11.016624450683594,
+                0.1808570772409439,
+                4.032196998596191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9997752904891968,
+                0.0,
+                -0.021199069917201996
+              ]
+            },
+            {
+              "sample_id": "step_0018.pose_at_metric",
+              "cycle_one_based": 19,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -11.016624450683594,
+                0.1808570772409439,
+                4.032196998596191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7164810299873352,
+                0.0,
+                0.6976065635681152
+              ]
+            },
+            {
+              "sample_id": "step_0018.pose_after_action",
+              "cycle_one_based": 19,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -15.36662483215332,
+                0.1808570772409439,
+                2.4976625442504883
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5767205953598022,
+                0.0,
+                0.8169414401054382
+              ]
+            },
+            {
+              "sample_id": "step_0019.pose_before",
+              "cycle_one_based": 20,
+              "stage": "pose_before",
+              "position_world_m": [
+                -15.36662483215332,
+                0.1808570772409439,
+                2.4976625442504883
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5767205953598022,
+                0.0,
+                0.8169414401054382
+              ]
+            },
+            {
+              "sample_id": "step_0019.pose_at_metric",
+              "cycle_one_based": 20,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -15.36662483215332,
+                0.1808570772409439,
+                2.4976625442504883
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.3392341136932373,
+                0.0,
+                0.940701961517334
+              ]
+            },
+            {
+              "sample_id": "step_0019.pose_after_action",
+              "cycle_one_based": 20,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -15.36662483215332,
+                0.1808570772409439,
+                2.4976625442504883
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.3392341136932373,
+                0.0,
+                0.940701961517334
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 9.147880554199219,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 7.506619453430176,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 6.0418877601623535,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 6.0418877601623535,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 6.532381057739258,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 6,
+              "distance_to_goal_m": 8.090595245361328,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 7,
+              "distance_to_goal_m": 6.474143981933594,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 8,
+              "distance_to_goal_m": 4.84931755065918,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 9,
+              "distance_to_goal_m": 3.2648978233337402,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 10,
+              "distance_to_goal_m": 1.5771511793136597,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 11,
+              "distance_to_goal_m": 0.44310811161994934,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 12,
+              "distance_to_goal_m": 0.8643245100975037,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 13,
+              "distance_to_goal_m": 0.8643245100975037,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 14,
+              "distance_to_goal_m": 2.4779369831085205,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 15,
+              "distance_to_goal_m": 4.134641647338867,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 16,
+              "distance_to_goal_m": 3.4419572353363037,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 17,
+              "distance_to_goal_m": 1.9262053966522217,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 18,
+              "distance_to_goal_m": 1.9262053966522217,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 19,
+              "distance_to_goal_m": 1.3609719276428223,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 20,
+              "distance_to_goal_m": 0.4064862132072449,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        }
+      ],
+      "full_path_reduction_percent_relative_to_wmnav": 27.899433382613694,
+      "selected_component_context_metrics": [
+        {
+          "condition": "No prior",
+          "strict_stop_success": true,
+          "spl_fraction": 0.25007950073704804,
+          "path_length_m": 37.9621679186821,
+          "decision_cycles": 23
+        },
+        {
+          "condition": "No arbitration (matched scale)",
+          "strict_stop_success": true,
+          "spl_fraction": 0.2766052808761002,
+          "path_length_m": 34.32168745994568,
+          "decision_cycles": 25
+        }
+      ]
+    },
+    {
+      "case_id": 761,
+      "goal": "toilet",
+      "runs": [
+        {
+          "method": "Full",
+          "strict_stop_success": true,
+          "spl_fraction": 0.5917155836572561,
+          "path_length_m": 5.549000382423401,
+          "decision_cycles": 5,
+          "final_distance_to_goal_m": 0.15194672346115112,
+          "first_recorded_below_1m_cycle_one_based": 3,
+          "explicit_stop_cycle_one_based": 5,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                -7.088679790496826,
+                2.53521990776062,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9901099801063538,
+                0.0,
+                -0.14027999341487885
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.088679790496826,
+                2.53521990776062,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9901099801063538,
+                0.0,
+                -0.14027999341487885
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.088679790496826,
+                2.6352195739746094,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.12439699470996857,
+                0.0,
+                -0.9922325015068054
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.16774144768714905,
+                0.0,
+                -0.9858310222625732
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.16774144768714905,
+                0.0,
+                -0.9858310222625732
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4233541190624237,
+                0.0,
+                -0.9059643149375916
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -5.365968227386475,
+                2.6352195739746094,
+                -2.265970230102539
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.36701589822769165,
+                0.0,
+                -0.9302146434783936
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.365968227386475,
+                2.6352195739746094,
+                -2.265970230102539
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.36701589822769165,
+                0.0,
+                -0.9302146434783936
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.365968227386475,
+                2.6352195739746094,
+                -2.265970230102539
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.39391469955444336,
+                0.0,
+                0.9191470146179199
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.978140354156494,
+                2.6352195739746094,
+                -2.7213640213012695
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5842676758766174,
+                0.0,
+                0.8115610480308533
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                -6.978140354156494,
+                2.6352195739746094,
+                -2.7213640213012695
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5842676758766174,
+                0.0,
+                0.8115610480308533
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -6.978140354156494,
+                2.6352195739746094,
+                -2.7213640213012695
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.16846756637096405,
+                -0.0,
+                0.9857072234153748
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.551756381988525,
+                2.6352195739746094,
+                -2.9933488368988037
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.22858132421970367,
+                0.0,
+                -0.973524808883667
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                -6.551756381988525,
+                2.6352195739746094,
+                -2.9933488368988037
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.22858132421970367,
+                0.0,
+                -0.973524808883667
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -6.551756381988525,
+                2.6352195739746094,
+                -2.9933488368988037
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4787465035915375,
+                0.0,
+                -0.8779531717300415
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.551756381988525,
+                2.6352195739746094,
+                -2.9933488368988037
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4787465035915375,
+                0.0,
+                -0.8779531717300415
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 3.1706533432006836,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 1.5652954578399658,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 0.27213212847709656,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 0.10706094652414322,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 0.15194672346115112,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        },
+        {
+          "method": "WMNav",
+          "strict_stop_success": true,
+          "spl_fraction": 0.34276119680838457,
+          "path_length_m": 9.579351544380188,
+          "decision_cycles": 7,
+          "final_distance_to_goal_m": 0.1428321748971939,
+          "first_recorded_below_1m_cycle_one_based": 4,
+          "explicit_stop_cycle_one_based": 7,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                -7.088679790496826,
+                2.53521990776062,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9901099801063538,
+                0.0,
+                -0.14027999341487885
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.088679790496826,
+                2.53521990776062,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9901099801063538,
+                0.0,
+                -0.14027999341487885
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.088679790496826,
+                2.6352195739746094,
+                0.5397199988365173
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.12439699470996857,
+                0.0,
+                -0.9922325015068054
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.16774144768714905,
+                0.0,
+                -0.9858310222625732
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.16774144768714905,
+                0.0,
+                -0.9858310222625732
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -6.534943103790283,
+                2.6352195739746094,
+                -1.0403536558151245
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5746263861656189,
+                0.0,
+                0.8184158802032471
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -7.375876426696777,
+                2.6352195739746094,
+                -1.6713638305664062
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5233709216117859,
+                0.0,
+                0.8521049618721008
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                -7.375876426696777,
+                2.6352195739746094,
+                -1.6713638305664062
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.5233709216117859,
+                0.0,
+                0.8521049618721008
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -7.375876426696777,
+                2.6352195739746094,
+                -1.6713638305664062
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6940474510192871,
+                0.0,
+                -0.7199292778968811
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7713903188705444,
+                0.0,
+                -0.6363623142242432
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7713903188705444,
+                0.0,
+                -0.6363623142242432
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9126124382019043,
+                0.0,
+                -0.4088258743286133
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.4088258743286133,
+                -0.0,
+                -0.9126124382019043
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.4088258743286133,
+                -0.0,
+                -0.9126124382019043
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -5.706870079040527,
+                2.6352195739746094,
+                -1.348217248916626
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.987902820110321,
+                0.0,
+                -0.15507416427135468
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -4.505698204040527,
+                2.6352195739746094,
+                -0.14522552490234375
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9240244030952454,
+                0.0,
+                -0.38233351707458496
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_before",
+              "cycle_one_based": 6,
+              "stage": "pose_before",
+              "position_world_m": [
+                -4.505698204040527,
+                2.6352195739746094,
+                -0.14522552490234375
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9240244030952454,
+                0.0,
+                -0.38233351707458496
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_at_metric",
+              "cycle_one_based": 6,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -4.505698204040527,
+                2.6352195739746094,
+                -0.14522552490234375
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.12651580572128296,
+                -0.0,
+                -0.99196457862854
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_after_action",
+              "cycle_one_based": 6,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.473422527313232,
+                2.6352195739746094,
+                -2.9835569858551025
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.27235275506973267,
+                0.0,
+                0.962197482585907
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_before",
+              "cycle_one_based": 7,
+              "stage": "pose_before",
+              "position_world_m": [
+                -6.473422527313232,
+                2.6352195739746094,
+                -2.9835569858551025
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.27235275506973267,
+                0.0,
+                0.962197482585907
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_at_metric",
+              "cycle_one_based": 7,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                -6.473422527313232,
+                2.6352195739746094,
+                -2.9835569858551025
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4946349859237671,
+                0.0,
+                -0.86910080909729
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_after_action",
+              "cycle_one_based": 7,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                -6.473422527313232,
+                2.6352195739746094,
+                -2.9835569858551025
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4946349859237671,
+                0.0,
+                -0.86910080909729
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 3.1706533432006836,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 1.5652954578399658,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 2.115234851837158,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 0.909868061542511,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 0.909868061542511,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 6,
+              "distance_to_goal_m": 2.446042537689209,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 7,
+              "distance_to_goal_m": 0.1428321748971939,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        }
+      ],
+      "full_path_reduction_percent_relative_to_wmnav": 42.07331929812336,
+      "selected_component_context_metrics": [
+        {
+          "condition": "No arbitration (matched scale)",
+          "strict_stop_success": true,
+          "spl_fraction": 0.2875336823751476,
+          "path_length_m": 11.419288247823715,
+          "decision_cycles": 10
+        },
+        {
+          "condition": "No prior",
+          "strict_stop_success": true,
+          "spl_fraction": 0.5917155836572561,
+          "path_length_m": 5.549000382423401,
+          "decision_cycles": 5
+        },
+        {
+          "condition": "No persistent graph",
+          "strict_stop_success": true,
+          "spl_fraction": 0.5917155836572561,
+          "path_length_m": 5.549000382423401,
+          "decision_cycles": 5
+        }
+      ]
+    },
+    {
+      "case_id": 696,
+      "goal": "chair",
+      "runs": [
+        {
+          "method": "Full",
+          "strict_stop_success": true,
+          "spl_fraction": 0.581614449177797,
+          "path_length_m": 6.979451775550842,
+          "decision_cycles": 5,
+          "final_distance_to_goal_m": 0.10652527213096619,
+          "first_recorded_below_1m_cycle_one_based": 4,
+          "explicit_stop_cycle_one_based": 5,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023989999666810036,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4627799987792969,
+                0.0,
+                0.8864700198173523
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023989999666810036,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4627799987792969,
+                0.0,
+                0.8864700198173523
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023992061614990234,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.3070787787437439,
+                0.0,
+                -0.9516841173171997
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6082891225814819,
+                0.0,
+                -0.7937155365943909
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6082891225814819,
+                0.0,
+                -0.7937155365943909
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.38744959235191345,
+                0.0,
+                -0.921890914440155
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                3.5021517276763916,
+                0.023992061614990234,
+                -0.30939510464668274
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6206220984458923,
+                0.0,
+                -0.7841098308563232
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                3.5021517276763916,
+                0.023992061614990234,
+                -0.30939510464668274
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6206220984458923,
+                0.0,
+                -0.7841098308563232
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                3.5021517276763916,
+                0.023992061614990234,
+                -0.30939510464668274
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8064609169960022,
+                0.0,
+                -0.5912874341011047
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.13923454284668,
+                0.05476659908890724,
+                -0.7676068544387817
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6043441891670227,
+                0.0,
+                -0.7967233657836914
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.13923454284668,
+                0.05476659908890724,
+                -0.7676068544387817
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6043441891670227,
+                0.0,
+                -0.7967233657836914
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.13923454284668,
+                0.05476659908890724,
+                -0.7676068544387817
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9917421936988831,
+                0.0,
+                -0.12824757397174835
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                6.232977867126465,
+                0.023992061614990234,
+                0.7577295303344727
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9747937321662903,
+                0.0,
+                -0.2231079339981079
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                6.232977867126465,
+                0.023992061614990234,
+                0.7577295303344727
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9747937321662903,
+                0.0,
+                -0.2231079339981079
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                6.232977867126465,
+                0.023992061614990234,
+                0.7577295303344727
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9990494847297668,
+                0.0,
+                0.0435907281935215
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                6.232977867126465,
+                0.023992061614990234,
+                0.7577295303344727
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9990494847297668,
+                0.0,
+                0.0435907281935215
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 3.9316530227661133,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 2.369328498840332,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 1.3805556297302246,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 0.6527223587036133,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 0.10652527213096619,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        },
+        {
+          "method": "WMNav",
+          "strict_stop_success": true,
+          "spl_fraction": 0.4626225574450298,
+          "path_length_m": 8.774647787213326,
+          "decision_cycles": 14,
+          "final_distance_to_goal_m": 0.938735842704773,
+          "first_recorded_below_1m_cycle_one_based": 4,
+          "explicit_stop_cycle_one_based": 14,
+          "pose_samples": [
+            {
+              "sample_id": "initial",
+              "cycle_one_based": null,
+              "stage": "initial_after_episode_initialization",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023989999666810036,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4627799987792969,
+                0.0,
+                0.8864700198173523
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_before",
+              "cycle_one_based": 1,
+              "stage": "pose_before",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023989999666810036,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.4627799987792969,
+                0.0,
+                0.8864700198173523
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_at_metric",
+              "cycle_one_based": 1,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                0.20603999495506287,
+                0.023992061614990234,
+                0.5314800143241882
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.3070787787437439,
+                0.0,
+                -0.9516841173171997
+              ]
+            },
+            {
+              "sample_id": "step_0000.pose_after_action",
+              "cycle_one_based": 1,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6082891225814819,
+                0.0,
+                -0.7937155365943909
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_before",
+              "cycle_one_based": 2,
+              "stage": "pose_before",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6082891225814819,
+                0.0,
+                -0.7937155365943909
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_at_metric",
+              "cycle_one_based": 2,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                1.8475888967514038,
+                0.023992061614990234,
+                0.08953332901000977
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.38744959235191345,
+                0.0,
+                -0.921890914440155
+              ]
+            },
+            {
+              "sample_id": "step_0001.pose_after_action",
+              "cycle_one_based": 2,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                3.3841776847839355,
+                0.023992061614990234,
+                -0.6377179026603699
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.534885585308075,
+                0.0,
+                -0.8449245095252991
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_before",
+              "cycle_one_based": 3,
+              "stage": "pose_before",
+              "position_world_m": [
+                3.3841776847839355,
+                0.023992061614990234,
+                -0.6377179026603699
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.534885585308075,
+                0.0,
+                -0.8449245095252991
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_at_metric",
+              "cycle_one_based": 3,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                3.3841776847839355,
+                0.023992061614990234,
+                -0.6377179026603699
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7399381995201111,
+                0.0,
+                -0.672674834728241
+              ]
+            },
+            {
+              "sample_id": "step_0002.pose_after_action",
+              "cycle_one_based": 3,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                4.976356029510498,
+                0.023992061614990234,
+                -0.04192453995347023
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8217258453369141,
+                0.0,
+                -0.5698829889297485
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_before",
+              "cycle_one_based": 4,
+              "stage": "pose_before",
+              "position_world_m": [
+                4.976356029510498,
+                0.023992061614990234,
+                -0.04192453995347023
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8217258453369141,
+                0.0,
+                -0.5698829889297485
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_at_metric",
+              "cycle_one_based": 4,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                4.976356029510498,
+                0.023992061614990234,
+                -0.04192453995347023
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9825870990753174,
+                0.0,
+                0.18580268323421478
+              ]
+            },
+            {
+              "sample_id": "step_0003.pose_after_action",
+              "cycle_one_based": 4,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9977391362190247,
+                0.0,
+                -0.06720568984746933
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_before",
+              "cycle_one_based": 5,
+              "stage": "pose_before",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9977391362190247,
+                0.0,
+                -0.06720568984746933
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_at_metric",
+              "cycle_one_based": 5,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.948193371295929,
+                0.0,
+                -0.31769368052482605
+              ]
+            },
+            {
+              "sample_id": "step_0004.pose_after_action",
+              "cycle_one_based": 5,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.31769368052482605,
+                -0.0,
+                -0.948193371295929
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_before",
+              "cycle_one_based": 6,
+              "stage": "pose_before",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.31769368052482605,
+                -0.0,
+                -0.948193371295929
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_at_metric",
+              "cycle_one_based": 6,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                4.996300220489502,
+                0.023992061614990234,
+                1.262341022491455
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8385421633720398,
+                0.0,
+                -0.544836699962616
+              ]
+            },
+            {
+              "sample_id": "step_0005.pose_after_action",
+              "cycle_one_based": 6,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.129893183708191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6840570569038391,
+                0.0,
+                -0.7294285297393799
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_before",
+              "cycle_one_based": 7,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.129893183708191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.6840570569038391,
+                0.0,
+                -0.7294285297393799
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_at_metric",
+              "cycle_one_based": 7,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.129893183708191
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8531094193458557,
+                0.0,
+                -0.5217320322990417
+              ]
+            },
+            {
+              "sample_id": "step_0006.pose_after_action",
+              "cycle_one_based": 7,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9211005568504333,
+                0.0,
+                -0.38932472467422485
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_before",
+              "cycle_one_based": 8,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9211005568504333,
+                0.0,
+                -0.38932472467422485
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_at_metric",
+              "cycle_one_based": 8,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9913935661315918,
+                0.0,
+                -0.1309153288602829
+              ]
+            },
+            {
+              "sample_id": "step_0007.pose_after_action",
+              "cycle_one_based": 8,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.1309153288602829,
+                -0.0,
+                -0.9913935661315918
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_before",
+              "cycle_one_based": 9,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.1309153288602829,
+                -0.0,
+                -0.9913935661315918
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_at_metric",
+              "cycle_one_based": 9,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9271021485328674,
+                0.0,
+                -0.37480872869491577
+              ]
+            },
+            {
+              "sample_id": "step_0008.pose_after_action",
+              "cycle_one_based": 9,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8106808662414551,
+                0.0,
+                -0.5854882597923279
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_before",
+              "cycle_one_based": 10,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8106808662414551,
+                0.0,
+                -0.5854882597923279
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_at_metric",
+              "cycle_one_based": 10,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9369927644729614,
+                0.0,
+                -0.3493488132953644
+              ]
+            },
+            {
+              "sample_id": "step_0009.pose_after_action",
+              "cycle_one_based": 10,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8263687491416931,
+                0.0,
+                -0.5631293654441833
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_before",
+              "cycle_one_based": 11,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8263687491416931,
+                0.0,
+                -0.5631293654441833
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_at_metric",
+              "cycle_one_based": 11,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9461843371391296,
+                0.0,
+                -0.3236282467842102
+              ]
+            },
+            {
+              "sample_id": "step_0010.pose_after_action",
+              "cycle_one_based": 11,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.3236282467842102,
+                -0.0,
+                -0.9461843371391296
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_before",
+              "cycle_one_based": 12,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                -0.0,
+                -0.3236282467842102,
+                -0.0,
+                -0.9461843371391296
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_at_metric",
+              "cycle_one_based": 12,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.160134315490723,
+                0.023992061614990234,
+                1.2077295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9979465007781982,
+                0.0,
+                -0.06405312567949295
+              ]
+            },
+            {
+              "sample_id": "step_0011.pose_after_action",
+              "cycle_one_based": 12,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                4.379116535186768,
+                0.023992061614990234,
+                1.8534197807312012
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9616928100585938,
+                0.0,
+                0.2741294205188751
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_before",
+              "cycle_one_based": 13,
+              "stage": "pose_before",
+              "position_world_m": [
+                4.379116535186768,
+                0.023992061614990234,
+                1.8534197807312012
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.9616928100585938,
+                0.0,
+                0.2741294205188751
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_at_metric",
+              "cycle_one_based": 13,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                4.379116535186768,
+                0.023992061614990234,
+                1.8534197807312012
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.8761396408081055,
+                0.0,
+                -0.4820574223995209
+              ]
+            },
+            {
+              "sample_id": "step_0012.pose_after_action",
+              "cycle_one_based": 13,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.260134220123291,
+                0.023992061614990234,
+                2.4577295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7618935108184814,
+                0.0,
+                -0.6477023363113403
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_before",
+              "cycle_one_based": 14,
+              "stage": "pose_before",
+              "position_world_m": [
+                5.260134220123291,
+                0.023992061614990234,
+                2.4577295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.7618935108184814,
+                0.0,
+                -0.6477023363113403
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_at_metric",
+              "cycle_one_based": 14,
+              "stage": "pose_at_metric",
+              "position_world_m": [
+                5.260134220123291,
+                0.023992061614990234,
+                2.4577295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.573024570941925,
+                0.0,
+                -0.8195381760597229
+              ]
+            },
+            {
+              "sample_id": "step_0013.pose_after_action",
+              "cycle_one_based": 14,
+              "stage": "pose_after_action",
+              "position_world_m": [
+                5.260134220123291,
+                0.023992061614990234,
+                2.4577295780181885
+              ],
+              "quaternion_xyzw": [
+                0.0,
+                0.573024570941925,
+                0.0,
+                -0.8195381760597229
+              ]
+            }
+          ],
+          "recorded_distances": [
+            {
+              "cycle_one_based": 1,
+              "distance_to_goal_m": 3.9316530227661133,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 2,
+              "distance_to_goal_m": 2.369328498840332,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 3,
+              "distance_to_goal_m": 1.566549301147461,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 4,
+              "distance_to_goal_m": 0.033766694366931915,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 5,
+              "distance_to_goal_m": 0.0632782056927681,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 6,
+              "distance_to_goal_m": 0.0632782056927681,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 7,
+              "distance_to_goal_m": 0.11048859357833862,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 8,
+              "distance_to_goal_m": 0.12676820158958435,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 9,
+              "distance_to_goal_m": 0.12676820158958435,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 10,
+              "distance_to_goal_m": 0.12676820158958435,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 11,
+              "distance_to_goal_m": 0.12676820158958435,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 12,
+              "distance_to_goal_m": 0.12676820158958435,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 13,
+              "distance_to_goal_m": 0.1284249722957611,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": false
+            },
+            {
+              "cycle_one_based": 14,
+              "distance_to_goal_m": 0.938735842704773,
+              "sample_stage": "pose_at_metric",
+              "explicit_stop": true
+            }
+          ]
+        }
+      ],
+      "full_path_reduction_percent_relative_to_wmnav": 20.458895390405253
+    }
+  ]
+}
